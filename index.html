@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8085 Simulator</title>
+
+	<script src="system/scripts/jquery.min.js"></script>
+	<script src="system/scripts/parser.js"></script>
+	<script src="system/scripts/memory.js"></script>
+	<script src="system/scripts/registers.js"></script>
+	<script src="system/scripts/instructions.js"></script>
+
+	<link rel="stylesheet" href="system/styles/main.css">
+</head>
+<body>
+	<textarea id="code" id="" cols="100" rows="10"></textarea>
+	<br>
+	<button id="compile">Compile</button>
+	&nbsp; <span id="checkCompile"></span>
+	<br>
+	<table border = "1">
+		<tr>
+			<th colspan="2">Registers</th>
+		</tr>
+		<tr>
+			<td colspan="2" id="regA"></td>
+		</tr>
+		<tr>
+			<td id="regB"></td>
+			<td id="regC"></td>
+		</tr>
+		<tr>
+			<td id="regD"></td>
+			<td id="regE"></td>
+		</tr>
+		<tr>
+			<td id="regH"></td>
+			<td id="regL"></td>
+		</tr>
+
+	</table>
+	<br>
+	Flags
+	<table border="1">
+		<tr>
+			<td id="sFlag"></td>
+			<td id="zFlag"></td>
+			<td>X</td>
+			<td id="acFlag"></td>
+			<td>X</td>
+			<td id="pFlag"></td>
+			<td>X</td>
+			<td id="cFlag"></td>
+		</tr>
+	</table>
+	<textarea id="console" readonly>CONSOLE</textarea>
+	<button id="clear">Clear Console</button>
+	<script>
+	$("#clear").click(function(){
+		$("#console").text("CONSOLE");
+	});
+	</script><br>
+	<table class="memory" border="1">
+		<thead id="thead">
+			<tr><th>Memory Addresses</th></tr>
+		</thead>
+		<tbody id="tbody">
+			
+		</tbody>
+	</table>
+</body>
+</html>

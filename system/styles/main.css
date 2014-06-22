@@ -1,0 +1,66 @@
+html,body{
+	font-family: sans-serif;
+}
+table{
+	position: relative;
+	left: 2px;
+	text-align: center;
+	border-collapse: collapse;
+}
+th,td{
+	padding: 5px;
+}
+button{
+	margin-bottom: 10px;
+}
+#console{
+	position: fixed;
+	top:10px;
+	right:10px;
+	width: 500px;
+	height: 90%;
+}
+#clear{
+	position: fixed;
+	top:8px;
+	right:8px;
+}
+button{
+	border: 1px solid #888;
+	outline:none;
+	padding:5px;
+	background: #eee;
+}
+button:hover{
+	background: #ddd;
+}
+button:active{
+	background: #ccc;
+}
+textarea{
+  resize: none;
+}
+table.memory{
+	position: absolute;
+	left:260px;
+	top:232px;
+}
+table.memory tbody{
+	height:300px;
+	overflow-y:scroll;
+	display:block;
+}
+table.memory #thead{
+	display:block;
+	border-bottom: 1px solid #ccc;
+}
+table.memory td{
+	width: 100px;
+}
+#thead tr,th{
+	border:none;
+	width: 228px!important;
+}
+#tbody td{
+	border-left:none;
+}
